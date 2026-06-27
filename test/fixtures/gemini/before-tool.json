@@ -1,0 +1,8 @@
+{
+  "hook_event_name": "BeforeTool",
+  "session_id": "s-gem-1",
+  "transcript_path": "test/fixtures/gemini/transcript.json",
+  "model": "gemini-2.0-pro",
+  "tool_name": "run_shell_command",
+  "tool_input": { "command": "ls" }
+}

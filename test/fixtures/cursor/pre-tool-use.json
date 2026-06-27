@@ -1,0 +1,9 @@
+{
+  "hook_event_name": "preToolUse",
+  "conversation_id": "s-cur-1",
+  "generation_id": "gen-9",
+  "transcript_path": "test/fixtures/claude-code/transcript.jsonl",
+  "model": { "id": "claude-sonnet-4-6" },
+  "tool_name": "edit_file",
+  "tool_input": { "path": "a.ts" }
+}

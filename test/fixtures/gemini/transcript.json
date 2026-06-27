@@ -1,0 +1,15 @@
+{
+  "messages": [
+    { "role": "user", "content": "hello" },
+    {
+      "role": "model",
+      "modelVersion": "gemini-2.0-pro",
+      "usageMetadata": { "promptTokenCount": 40000, "candidatesTokenCount": 300, "cachedContentTokenCount": 0 }
+    },
+    {
+      "role": "model",
+      "modelVersion": "gemini-2.0-pro",
+      "usageMetadata": { "promptTokenCount": 90000, "candidatesTokenCount": 600, "cachedContentTokenCount": 10000 }
+    }
+  ]
+}

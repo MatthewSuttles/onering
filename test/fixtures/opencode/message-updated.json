@@ -1,0 +1,7 @@
+{
+  "event": "message.updated",
+  "sessionId": "s-oc-1",
+  "model": "anthropic/claude-opus-4-8",
+  "window": 200000,
+  "tokens": { "input": 5, "output": 800, "cache": { "read": 150000, "write": 10000 } }
+}

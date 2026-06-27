@@ -1,0 +1,11 @@
+{
+  "hook_event_name": "PostToolUse",
+  "session_id": "s-cc-1",
+  "transcript_path": "test/fixtures/claude-code/transcript.jsonl",
+  "cwd": "/repo",
+  "model": "claude-opus-4-8",
+  "tool_name": "Edit",
+  "tool_input": { "file_path": "/repo/a.ts" },
+  "tool_response": { "ok": true },
+  "tool_use_id": "tu-1"
+}

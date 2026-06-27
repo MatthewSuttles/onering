@@ -1,0 +1,55 @@
+{
+  "name": "onering",
+  "version": "0.1.0",
+  "description": "A unified hook layer for coding-agent harnesses. One normalized hook envelope with a mandatory usage block, plus per-harness adapters that backfill it today.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Matthew Suttles <matthew@tinycloudventures.com>",
+  "homepage": "https://github.com/MatthewSuttles/onering#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewSuttles/onering.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatthewSuttles/onering/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "onering-cmd": "dist/src/bin/onering-cmd.js",
+    "onering-codex": "dist/src/bin/onering-codex.js",
+    "onering-install": "dist/src/bin/onering-install.js",
+    "onering-consumer": "dist/src/consumer/server.js"
+  },
+  "exports": {
+    ".": "./dist/src/core/index.js",
+    "./core": "./dist/src/core/index.js",
+    "./adapters": "./dist/src/adapters/index.js",
+    "./plugin/opencode": "./dist/src/plugin/opencode.js"
+  },
+  "files": [
+    "dist/src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\"",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "hooks",
+    "claude-code",
+    "cursor",
+    "gemini-cli",
+    "codex",
+    "opencode",
+    "context-window",
+    "agent"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.0"
+  }
+}
