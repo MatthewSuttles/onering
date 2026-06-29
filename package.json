@@ -26,6 +26,7 @@
     ".": "./dist/src/core/index.js",
     "./core": "./dist/src/core/index.js",
     "./adapters": "./dist/src/adapters/index.js",
+    "./install": "./dist/src/install/install.js",
     "./plugin/opencode": "./dist/src/plugin/opencode.js"
   },
   "files": [

@@ -476,6 +476,20 @@ Selected exports from `onering/core`:
 `cursorCallbackDecision`. `onering/plugin/opencode` exports the OpenCode `Onering`
 plugin.
 
+`onering/install` exposes the per-harness installer as a function, so a GUI button
+or editor extension can wire onering into a repo without shelling out to the CLI:
+
+```ts
+import { installHarness, listHarnesses } from "onering/install";
+
+const result = installHarness("claude-code", { projectDir: "/path/to/repo" });
+// → { ok: true, harness: "claude-code", path: ".../.claude/settings.json", message }
+```
+
+`installHarness(harness, opts)` is merge-safe and idempotent; pass `{ global: true }`
+for the user-level config (claude-code/gemini), or an `fs` to test it in memory.
+`listHarnesses()` enumerates the supported harnesses for a picker.
+
 ## CLI reference
 
 All binaries live under `dist/src/` after `npm run build`, and are exposed as npm
